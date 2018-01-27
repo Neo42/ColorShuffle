@@ -16,7 +16,7 @@
       </div>
     </div>
     <script type="text/javascript">
-    function itemer(code) {
+     itemer(code) {
       var c1 = code.substring(0, 6);
       var c2 = code.substring(6, 12);
       var c3 = code.substring(12, 18);
@@ -32,7 +32,7 @@
       $('.n4').css('color', '#' + c2);
     }
 
-    var data = [
+    let data = [
       'ebedc89ab5c174698cc1867b-6850',
       '44918791e4a65f64c0453064-5335',
       'e4f68f50c19a686354444036-11150',
@@ -635,8 +635,8 @@
       'd1dbbd91aa9d3e606f193441-3267'
     ];
 
-    var randi = Math.floor(Math.random() * data.length);
-    itemer(data[randi]);
+    let randi = Math.floor(Math.random() * data.length);
+    setTimeOut(itemer(data[randi]),500);
     </script>
   </body>
 
