@@ -4,6 +4,19 @@
 <head>
   <title>ColorShuffle</title>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+  
+<body>
+  <div class="item tran">
+    <div class="canvas">
+      <div class="place c4 tran"><span class="tran"></span></div>
+      <div class="place c3 tran"><span class="tran"></span></div>
+      <div class="place c2 tran"><span class="tran"></span></div>
+      <div class="place c1 tran"><span class="tran"></span></div>
+    </div>
+  </div>
+  
   <script type="text/javascript">
     function itemer(code) {
       var c1 = code.substring(0, 6);
@@ -627,18 +640,6 @@
     var randi = Math.floor(Math.random() * data.length);
     itemer(data[randi]);
   </script>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  <div class="item tran">
-    <div class="canvas">
-      <div class="place c4 tran"><span class="tran"></span></div>
-      <div class="place c3 tran"><span class="tran"></span></div>
-      <div class="place c2 tran"><span class="tran"></span></div>
-      <div class="place c1 tran"><span class="tran"></span></div>
-    </div>
-  </div>
 </body>
 
 </html>
